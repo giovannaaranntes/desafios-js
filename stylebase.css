@@ -1,29 +1,36 @@
-/* ===== Estilo base das páginas de desafio ===== */
+/* ===== Estilo base das páginas de desafio - Versão Fofa e Aconchegante (Cozy-Chic) ===== */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* Garante que padding e border não aumentem o tamanho final */
+    box-sizing: border-box; 
+    /* Fontes amigáveis */
     font-family: 'Poppins', sans-serif;
 }
 
-/* Fundo geral pastel */
+/* Fundo geral pastel com um toque de névoa */
 body {
-    background: linear-gradient(135deg, #fdf6f9, #f0f4ff);
+    /* Gradiente mais suave e 'cremoso' */
+    background: linear-gradient(135deg, #fff7f7, #fcf0f8); 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #444;
+    /* Cor de texto mais suave, menos dura */
+    color: #5d5d5d; 
 }
 
-/* ===== Header com seta de voltar ===== */
+/* ===== Header com seta de voltar - Flutuante e Leve ===== */
 header {
     display: flex;
     align-items: center;
-    background-color: #fffafc;
-    box-shadow: 0 4px 12px rgba(200, 150, 255, 0.15);
-    padding: 15px 25px;
-    border-bottom: 2px solid #f3e8ff;
+    /* Fundo branco cremoso */
+    background-color: #ffffff; 
+    /* Sombra suave e 'flutuante' */
+    box-shadow: 0 6px 15px rgba(255, 180, 200, 0.25); 
+    padding: 18px 30px; /* Mais preenchimento */
+    /* Borda inferior sutilmente colorida */
+    border-bottom: 3px solid #f6e8ff; 
     position: sticky;
     top: 0;
     z-index: 10;
@@ -32,111 +39,133 @@ header {
 header h1 {
     flex: 1;
     text-align: center;
-    color: #a78bfa;
-    font-size: 1.5rem;
+    /* Cor lavanda suave e inspiradora */
+    color: #a78bfa; 
+    font-size: 1.6rem; /* Um pouco maior */
+    /* Espaçamento entre letras para um visual mais 'limpo' */
+    letter-spacing: 0.5px; 
 }
 
-/* Seta de voltar */
+/* Seta de voltar - Cativante e Rosa */
 .voltar {
-    font-size: 1.8rem;
-    color: #fca5a5;
+    font-size: 2rem; /* Seta maior */
+    /* Rosa pastel para a seta */
+    color: #ff91a4; 
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição mais bouncy/suave */
 }
 
 .voltar:hover {
-    color: #fb7185;
-    transform: translateX(-5px);
+    /* Rosa mais vibrante e acolhedor ao passar o mouse */
+    color: #ff5d87; 
+    /* Movimento sutil */
+    transform: translateX(-8px) scale(1.05); 
 }
 
-/* ===== Conteúdo principal ===== */
+/* ===== Conteúdo principal - Centralizado e Calmo ===== */
 main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 50px 20px; /* Mais espaço vertical */
 }
 
 .conteudo {
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 40px;
-    box-shadow: 0 8px 20px rgba(180, 150, 255, 0.15);
-    max-width: 600px;
+    /* Fundo 'papel' branco */
+    background-color: #ffffff; 
+    /* Bordas mais arredondadas para um visual 'fofo' */
+    border-radius: 35px; 
+    padding: 45px;
+    /* Sombra mais difusa e quente */
+    box-shadow: 0 10px 30px rgba(200, 150, 255, 0.2), 0 0 10px rgba(255, 200, 220, 0.1); 
+    max-width: 650px; /* Um pouco mais largo */
     width: 100%;
     text-align: center;
 }
 
 .conteudo h2 {
-    color: #a78bfa;
-    margin-bottom: 15px;
+    /* Mantém a cor lavanda */
+    color: #a78bfa; 
+    margin-bottom: 25px; /* Mais espaço */
+    font-size: 1.8rem;
 }
 
 .conteudo p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
+    /* Cinza mais suave */
+    color: #888; 
+    font-size: 1.05rem; /* Levemente maior */
+    line-height: 1.7; /* Mais espaçamento para fácil leitura */
 }
 
- main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-}
-
-.conteudo {
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 40px;
-    box-shadow: 0 8px 20px rgba(180, 150, 255, 0.15);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-}
-
-.conteudo h2 {
-    color: #a78bfa;
-    margin-bottom: 20px;
-}
-
+/* Elementos de Formulário */
 label {
     display: block;
-    font-weight: 500;
-    margin-top: 10px;
-    color: #666;
+    font-weight: 600; /* Mais destaque */
+    margin-top: 15px;
+    /* Cor de texto sutil */
+    color: #777; 
+    font-size: 0.95rem;
 }
 
 input {
-    margin-top: 8px;
-    margin-bottom: 12px;
-    padding: 10px;
-    border: 2px solid #d1d5db;
-    border-radius: 10px;
-    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 12px; /* Mais preenchimento */
+    /* Borda suave e arredondada */
+    border: 2px solid #e2e8f0; 
+    border-radius: 15px; 
+    width: 85%; /* Um pouco mais largo */
     text-align: center;
+    /* Transição para a borda */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input:focus {
+    /* Borda suave e levemente colorida ao focar */
+    border-color: #ffb6c1; 
+    /* Sombra interna sutil para profundidade */
+    box-shadow: 0 0 0 3px rgba(255, 182, 193, 0.2); 
+    outline: none;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #a78bfa;
+    margin-top: 20px;
+    padding: 12px 25px;
+    /* Cor principal lavanda */
+    background-color: #a78bfa; 
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px; /* Mais arredondado (pílula) */
     cursor: pointer;
-    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1.05rem;
+    /* Sombra sutil para o botão */
+    box-shadow: 0 4px 10px rgba(167, 139, 250, 0.3); 
+    /* Transição suave para tudo */
+    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
 }
 
 button:hover {
-    background-color: #7c3aed;
+    /* Cor mais profunda ao passar o mouse */
+    background-color: #9373f7; 
+    /* Elevação e sombra mais intensa */
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(147, 115, 247, 0.4);
 }
 
 #resultado {
-    margin-top: 25px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #4ade80;
+    margin-top: 30px;
+    font-size: 1.3rem; /* Mais visível */
+    font-weight: extra-bold;
+    /* Verde-menta suave para resultado positivo */
+    color: #60d298; 
+    letter-spacing: 0.5px;
+    /* Transição para resultados dinâmicos */
+    transition: color 0.5s ease; 
+}
+
+/* Opcional: Adicionar um estilo para resultados negativos (se aplicável no JS) */
+.resultado-erro {
+    color: #ff91a4 !important; /* Rosa suave para erro */
 }
