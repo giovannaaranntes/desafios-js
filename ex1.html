@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylebase.css">
+</head>
+<body>
+    <style>
+        main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.conteudo {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(180, 150, 255, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo h2 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a78bfa;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7c3aed;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4ade80;
+}
+    </style>
+    <header>
+        <a href="index.html" class="voltar">&#8592;</a>
+        <h1>Desafio 1</h1>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <h2>Qual palavra tem mais letras?</h2>
+            <form id="form">
+                <input type="text" id="palavraA" placeholder="Palavra de Aldo" required>
+                <input type="text" id="palavraB" placeholder="Palavra de Jucimara" required>
+                <button type="submit">Comparar</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>

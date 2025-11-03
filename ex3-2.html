@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylebase.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="voltar">&#8592;</a>
+        <h1>Desafio 3.2</h1>
+    </header>
+
+   <main>
+        <div class="conteudo">
+            <h2>Descubra a pontuação do vice-campeão</h2>
+
+            <form id="form">
+                <label for="a">Pontuação do Competidor A:</label>
+                <input type="number" id="a" min="1" max="100" required>
+
+                <label for="b">Pontuação do Competidor B:</label>
+                <input type="number" id="b" min="1" max="100" required>
+
+                <label for="c">Pontuação do Competidor C:</label>
+                <input type="number" id="c" min="1" max="100" required>
+
+                <button type="submit">Descobrir Vice-Campeão</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="script3-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylebase.css">
+</head>
+<body>
+    <style>
+       
+    </style>
+    <header>
+        <a href="index.html" class="voltar">&#8592;</a>
+        <h1>Desafio 2.1</h1>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <h2>Descubra quantas vezes a música mais tocada foi ouvida</h2>
+            
+            <form id="form">
+                <label for="n">Quantidade de músicas (N):</label>
+                <input type="number" id="n" min="1" max="100" required>
+
+                <label for="valores">Informe quantas vezes cada música foi tocada (separe com espaços):</label>
+                <input type="text" id="valores" placeholder="Ex: 20 35 42 17 42" required>
+
+                <button type="submit">Calcular</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>

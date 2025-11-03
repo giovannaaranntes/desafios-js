@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #fef6f0, #f6f1ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #444;
+}
+
+/* === Caixa Principal === */
+.caixa {
+    background-color: #fad7f2;
+    padding: 40px 60px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(200, 170, 255, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* === Título === */
+h1 {
+    font-size: 2rem;
+    color: #a78bfa; /* lilás pastel */
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #fca5a5; /* rosado suave */
+}
+
+/* === Botões === */
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 12px 30px;
+    background-color: #c7d2fe; /* azul pastel */
+    color: #fff;
+    font-weight: 500;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(150, 150, 255, 0.15);
+}
+
+.button:hover {
+    background-color: #a5b4fc;
+    transform: translateY(-3px);
+}
+
+/* === Textos dos Desafios === */
+p {
+    color: #7e7e7e;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* === Efeito sutil ao passar o mouse na caixa === */
+.caixa:hover {
+    box-shadow: 0 12px 25px rgba(180, 150, 255, 0.25);
+    transition: 0.4s;
+}

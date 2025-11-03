@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylebase.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="voltar">&#8592;</a>
+        <h1>Desafio 3.3</h1>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <h2>Quem venceu o jogo?</h2>
+
+            <form id="form">
+                <label for="a">Valor escolhido por Alice:</label>
+                <input type="number" id="a" min="0" max="1" required>
+
+                <label for="b">Valor escolhido por Beto:</label>
+                <input type="number" id="b" min="0" max="1" required>
+
+                <label for="c">Valor escolhido por Clara:</label>
+                <input type="number" id="c" min="0" max="1" required>
+
+                <button type="submit">Descobrir Vencedor</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="script3-3.js"></script>
+</body>
+</html>

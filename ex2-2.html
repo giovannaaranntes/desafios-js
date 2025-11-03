@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylebase.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="voltar">&#8592;</a>
+        <h1>Desafio 2.2</h1>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <h2>Descubra qual aluno tirou a maior nota</h2>
+
+            <form id="form">
+                <label for="n">Quantidade de alunos (N):</label>
+                <input type="number" id="n" min="1" max="20" required>
+
+                <div id="campos"></div>
+
+                <button type="button" id="gerarCampos">Gerar Campos</button>
+                <button type="submit" style="display:none;">Calcular</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="script2-2.js"></script>
+</body>
+</html>

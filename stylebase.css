@@ -1,0 +1,142 @@
+/* ===== Estilo base das páginas de desafio ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo geral pastel */
+body {
+    background: linear-gradient(135deg, #fdf6f9, #f0f4ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #444;
+}
+
+/* ===== Header com seta de voltar ===== */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fffafc;
+    box-shadow: 0 4px 12px rgba(200, 150, 255, 0.15);
+    padding: 15px 25px;
+    border-bottom: 2px solid #f3e8ff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    color: #a78bfa;
+    font-size: 1.5rem;
+}
+
+/* Seta de voltar */
+.voltar {
+    font-size: 1.8rem;
+    color: #fca5a5;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.voltar:hover {
+    color: #fb7185;
+    transform: translateX(-5px);
+}
+
+/* ===== Conteúdo principal ===== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.conteudo {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(180, 150, 255, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo h2 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.conteudo p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.conteudo {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(180, 150, 255, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo h2 {
+    color: #a78bfa;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #666;
+}
+
+input {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a78bfa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7c3aed;
+}
+
+#resultado {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4ade80;
+}
