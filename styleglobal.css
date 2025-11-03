@@ -1,70 +1,95 @@
-*{
+/* ===== Estilo Base - Versão Super Fofa e Aconchegante (Kawaii) ===== */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background: linear-gradient(135deg, #fef6f0, #f6f1ff);
+    /* Gradiente de fundo mais vibrante e quente */
+    background: linear-gradient(145deg, #fff7fa, #fce5ff); 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #444;
+    /* Cor do texto suave */
+    color: #555; 
 }
 
-/* === Caixa Principal === */
+/* === Caixa Principal - O Coração Fofo === */
 .caixa {
-    background-color: #fad7f2;
-    padding: 40px 60px;
-    border-radius: 30px;
-    box-shadow: 0 8px 20px rgba(200, 170, 255, 0.2);
+    /* Fundo com cor rosa chiclete suave */
+    background-color: #ffe0f0; 
+    padding: 50px 65px; /* Mais preenchimento */
+    /* Bordas super arredondadas! */
+    border-radius: 40px; 
+    /* Sombra mais difusa e com um toque de brilho */
+    box-shadow: 0 10px 30px rgba(255, 170, 200, 0.3);
+    border: 3px solid #f9d1e4; /* Borda rosa clara para destaque */
     text-align: center;
-    max-width: 400px;
+    max-width: 450px; /* Um pouco mais larga */
     width: 90%;
 }
 
-/* === Título === */
+/* === Título - Charmoso e Inspirador === */
 h1 {
-    font-size: 2rem;
-    color: #a78bfa; /* lilás pastel */
-    margin-bottom: 25px;
+    font-size: 2.2rem; /* Maior e mais impactante */
+    /* Lilás mais vibrante */
+    color: #9c6cff; 
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 }
 
 h1 span {
-    color: #fca5a5; /* rosado suave */
+    /* Rosa bebê mais doce */
+    color: #ff99aa; 
+    font-weight: 700;
 }
 
-/* === Botões === */
+/* === Botões - Pílulas Mágicas === */
 .button {
     display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 12px 30px;
-    background-color: #c7d2fe; /* azul pastel */
-    color: #fff;
-    font-weight: 500;
-    border-radius: 25px;
+    margin: 10px 5px; /* Mais espaço entre botões */
+    padding: 14px 35px; /* Mais fofo e preenchido */
+    /* Azul celeste suave */
+    background-color: #a7d9ff; 
+    color: #ffffff;
+    font-weight: 600; /* Mais destaque */
+    /* Formato pílula/cápsula */
+    border-radius: 35px; 
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(150, 150, 255, 0.15);
+    /* Transição suave e uniforme */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    /* Sombra de botão suave */
+    box-shadow: 0 5px 10px rgba(167, 217, 255, 0.4); 
+    border: none;
 }
 
 .button:hover {
-    background-color: #a5b4fc;
-    transform: translateY(-3px);
+    /* Cor de hover mais intensa */
+    background-color: #79c1f7;
+    /* Movimento de "pulo" suave */
+    transform: translateY(-5px); 
+    /* Sombra de elevação */
+    box-shadow: 0 10px 20px rgba(121, 193, 247, 0.5);
 }
 
-/* === Textos dos Desafios === */
+/* === Textos dos Desafios - Detalhe Delicado === */
 p {
-    color: #7e7e7e;
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-    font-style: italic;
+    /* Cinza mais suave */
+    color: #8a8a8a; 
+    font-size: 1rem; /* Um pouco maior */
+    margin-bottom: 20px;
+    font-style: normal; /* Estilo padrão */
+    line-height: 1.6;
 }
 
-/* === Efeito sutil ao passar o mouse na caixa === */
+/* === Efeito de Brilho Sutil ao passar o mouse na caixa === */
 .caixa:hover {
-    box-shadow: 0 12px 25px rgba(180, 150, 255, 0.25);
-    transition: 0.4s;
+    /* Sombra de brilho suave e quente */
+    box-shadow: 0 15px 35px rgba(255, 150, 180, 0.4), 0 0 15px rgba(255, 255, 255, 0.5) inset;
+    transform: scale(1.02); /* Escala sutil */
+    transition: all 0.5s ease-in-out;
 }
