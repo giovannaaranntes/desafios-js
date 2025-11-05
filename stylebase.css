@@ -1,114 +1,104 @@
-/* ===== Estilo Base - Versão Industrial Chic & Material Design ===== */
+/* ===== Estilo Base - Dark Mode Elegante ===== */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    /* Fontes formais e limpas */
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', sans-serif;
 }
 
-/* Fundo geral neutro e claro */
+/* ===== Fundo Geral ===== */
 body {
-    /* Fundo cinza suave, quase branco */
-    background-color: #f5f7fa; 
+    background: linear-gradient(135deg, #0d1117, #161b22);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Cor de texto primária (azul marinho/cinza escuro) */
-    color: #333d4e; 
+    color: #e6edf3;
 }
 
-/* ===== Header com seta de voltar - Fixo e Profissional ===== */
+/* ===== Header ===== */
 header {
     display: flex;
     align-items: center;
-    /* Fundo branco limpo */
-    background-color: #ffffff; 
-    /* Sombra de profundidade (Material Design) */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    padding: 15px 25px; 
-    /* Borda sutil na cor primária */
-    border-bottom: 3px solid #007bff; 
+    background: #1f2933;
+    border-bottom: 2px solid #3b82f6;
+    padding: 15px 25px;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 header h1 {
     flex: 1;
     text-align: center;
-    /* Cor primária: Azul Clássico */
-    color: #007bff; 
-    font-size: 1.7rem; 
-    letter-spacing: normal; 
-    font-weight: 500;
+    color: #60a5fa;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-/* Seta de voltar - Sóbria e Funcional */
+/* ===== Seta Voltar ===== */
 .voltar {
-    font-size: 1.8rem; 
-    /* Cor Secundária: Cinza Escuro */
-    color: #5a6268; 
+    font-size: 1.8rem;
+    color: #9ca3af;
     text-decoration: none;
-    transition: 0.3s ease-in-out; 
+    transition: 0.3s ease;
 }
 
 .voltar:hover {
-    /* Cor de foco: Laranja/Cobre Industrial */
-    color: #e67e22; 
-    /* Movimento funcional */
-    transform: translateX(-4px); 
+    color: #a78bfa;
+    transform: translateX(-4px);
 }
 
-/* ===== Conteúdo principal - Centralizado e Estruturado ===== */
+/* ===== Conteúdo Principal ===== */
 main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px; 
+    padding: 40px 20px;
 }
 
 .conteudo {
-    /* Fundo de container limpo */
-    background-color: #ffffff; 
-    /* Bordas sutilmente arredondadas */
-    border-radius: 10px; 
-    padding: 40px;
-    /* Sombra de Material Design com elevação */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
-    max-width: 600px; 
+    background: #1c1f26;
+    border-radius: 12px;
+    padding: 45px 40px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
     width: 100%;
     text-align: center;
-    /* Borda sutil para dar acabamento */
-    border: 1px solid #e0e0e0;
+    border: 1px solid #2d3748;
+    transition: 0.3s ease-in-out;
 }
 
+.conteudo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* ===== Título e Texto ===== */
 .conteudo h2 {
-    /* Cor primária */
-    color: #007bff; 
-    margin-bottom: 20px; 
+    color: #60a5fa;
+    margin-bottom: 20px;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .conteudo p {
-    /* Cinza escuro para melhor legibilidade */
-    color: #555; 
-    font-size: 1rem; 
-    line-height: 1.6; 
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
-/* Elementos de Formulário - Input Field */
+/* ===== Formulários ===== */
 label {
     display: block;
-    font-weight: 500; 
+    font-weight: 500;
     margin-top: 20px;
-    /* Cor secundária */
-    color: #5a6268; 
+    color: #9ca3af;
     font-size: 0.9rem;
-    text-align: left; /* Alinhamento à esquerda para campos de formulário */
+    text-align: left;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -117,61 +107,53 @@ label {
 input {
     margin-top: 8px;
     margin-bottom: 15px;
-    padding: 10px; 
-    /* Borda sutil */
-    border: 1px solid #ced4da; 
-    border-radius: 6px; 
-    width: 85%; 
-    text-align: left; /* Texto alinhado à esquerda dentro do campo */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
-    color: #333d4e;
+    padding: 12px;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    width: 85%;
+    background: #111827;
+    color: #f3f4f6;
+    transition: all 0.3s ease;
 }
 
 input:focus {
-    /* Borda de foco na cor primária */
-    border-color: #007bff; 
-    /* Sombra de foco limpa e fina */
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); 
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.4);
     outline: none;
 }
 
+/* ===== Botão ===== */
 button {
     margin-top: 30px;
     padding: 12px 30px;
-    /* Cor primária: Azul forte */
-    background-color: #007bff; 
-    color: white;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    color: #fff;
     border: none;
-    border-radius: 8px; /* Arredondamento clássico */
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
-    /* Sombra de botão limpa */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: 0.3s ease-in-out; 
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
-    /* Cor mais escura ao passar o mouse */
-    background-color: #0056b3; 
-    /* Elevação sutilmente reduzida */
-    transform: translateY(-1px); 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
 }
 
+/* ===== Resultado ===== */
 #resultado {
     margin-top: 35px;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     font-weight: 700;
-    /* Verde de sucesso corporativo */
-    color: #28a745; 
+    color: #10b981; /* verde de sucesso */
     letter-spacing: 0;
-    transition: color 0.5s ease; 
+    transition: color 0.5s ease;
 }
 
-/* Estilo para resultados negativos */
+/* ===== Resultado de Erro ===== */
 .resultado-erro {
-    /* Vermelho de alerta */
-    color: #dc3545 !important; 
+    color: #ef4444 !important;
 }
-
