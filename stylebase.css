@@ -20,7 +20,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background: #1f2933;
+    background-color: #1f2933;
     border-bottom: 2px solid #3b82f6;
     padding: 15px 25px;
     position: sticky;
@@ -61,7 +61,7 @@ main {
 }
 
 .conteudo {
-    background: #1c1f26;
+    background-color: #1c1f26;
     border-radius: 12px;
     padding: 45px 40px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
@@ -69,7 +69,7 @@ main {
     width: 100%;
     text-align: center;
     border: 1px solid #2d3748;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .conteudo:hover {
@@ -111,7 +111,7 @@ input {
     border: 1px solid #374151;
     border-radius: 6px;
     width: 85%;
-    background: #111827;
+    background-color: #111827;
     color: #f3f4f6;
     transition: all 0.3s ease;
 }
@@ -134,7 +134,7 @@ button {
     font-weight: 600;
     font-size: 1rem;
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-    transition: 0.3s ease-in-out;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
@@ -148,8 +148,7 @@ button:hover {
     margin-top: 35px;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #10b981; /* verde de sucesso */
-    letter-spacing: 0;
+    color: #10b981; /* Verde de sucesso */
     transition: color 0.5s ease;
 }
 
