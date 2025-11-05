@@ -1,95 +1,167 @@
-/* ===== Estilo Base - Versão Super Fofa e Aconchegante (Kawaii) ===== */
+/* ===== Estilo Base - Versão Dark Tech & Cyberpunk Minimalista ===== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* Fonte futurista/mono */
+    font-family: 'Consolas', 'Courier New', monospace;
 }
 
+/* Fundo geral escuro com brilho neon sutil */
 body {
-    /* Gradiente de fundo mais vibrante e quente */
-    background: linear-gradient(145deg, #fff7fa, #fce5ff); 
+    background-color: #0d1117; /* GitHub Dark */
+    /* Detalhe de fundo futurista (opcional: pode ser uma imagem de grade) */
+    /* background: radial-gradient(circle at 50% 50%, rgba(30, 255, 200, 0.05) 1%, transparent 80%), #0d1117; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #c9d1d9; /* Cinza claro para leitura */
+}
+
+/* ===== Header com seta de voltar - Interface de Comando Rápido ===== */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #161b22; /* Fundo mais escuro */
+    /* Sombra de brilho neon azul/ciano */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    padding: 15px 25px;
+    border-bottom: 2px solid #00ffff; /* Linha de separação Ciano */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    /* Cor de destaque neon */
+    color: #38bdf8; /* Azul Neon */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    /* Efeito de glitch sutil */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Seta de voltar - Ícone de navegação */
+.voltar {
+    font-size: 2rem;
+    color: #ff00ff; /* Magenta Neon */
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.voltar:hover {
+    color: #00ffff; /* Ciano Neon ao passar o mouse */
+    transform: translateX(-5px) scale(1.1);
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* ===== Conteúdo principal - Módulo de Dados ===== */
+main {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    /* Cor do texto suave */
-    color: #555; 
+    padding: 40px 20px;
 }
 
-/* === Caixa Principal - O Coração Fofo === */
-.caixa {
-    /* Fundo com cor rosa chiclete suave */
-    background-color: #ffe0f0; 
-    padding: 50px 65px; /* Mais preenchimento */
-    /* Bordas super arredondadas! */
-    border-radius: 40px; 
-    /* Sombra mais difusa e com um toque de brilho */
-    box-shadow: 0 10px 30px rgba(255, 170, 200, 0.3);
-    border: 3px solid #f9d1e4; /* Borda rosa clara para destaque */
+.conteudo {
+    background-color: #1e2430; /* Fundo do módulo */
+    /* Bordas quadradas/angulares */
+    border-radius: 5px; 
+    padding: 40px;
+    /* Borda de brilho neon verde */
+    border: 1px solid #00ff00; 
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.4); 
+    max-width: 600px;
+    width: 100%;
     text-align: center;
-    max-width: 450px; /* Um pouco mais larga */
-    width: 90%;
 }
 
-/* === Título - Charmoso e Inspirador === */
-h1 {
-    font-size: 2.2rem; /* Maior e mais impactante */
-    /* Lilás mais vibrante */
-    color: #9c6cff; 
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+.conteudo h2 {
+    color: #00ff00; /* Título Verde Neon */
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
-h1 span {
-    /* Rosa bebê mais doce */
-    color: #ff99aa; 
-    font-weight: 700;
-}
-
-/* === Botões - Pílulas Mágicas === */
-.button {
-    display: inline-block;
-    margin: 10px 5px; /* Mais espaço entre botões */
-    padding: 14px 35px; /* Mais fofo e preenchido */
-    /* Azul celeste suave */
-    background-color: #a7d9ff; 
-    color: #ffffff;
-    font-weight: 600; /* Mais destaque */
-    /* Formato pílula/cápsula */
-    border-radius: 35px; 
-    text-decoration: none;
-    /* Transição suave e uniforme */
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
-    /* Sombra de botão suave */
-    box-shadow: 0 5px 10px rgba(167, 217, 255, 0.4); 
-    border: none;
-}
-
-.button:hover {
-    /* Cor de hover mais intensa */
-    background-color: #79c1f7;
-    /* Movimento de "pulo" suave */
-    transform: translateY(-5px); 
-    /* Sombra de elevação */
-    box-shadow: 0 10px 20px rgba(121, 193, 247, 0.5);
-}
-
-/* === Textos dos Desafios - Detalhe Delicado === */
-p {
-    /* Cinza mais suave */
-    color: #8a8a8a; 
-    font-size: 1rem; /* Um pouco maior */
-    margin-bottom: 20px;
-    font-style: normal; /* Estilo padrão */
+.conteudo p {
+    color: #94a3b8; /* Cinza Metálico para o texto */
+    font-size: 1rem;
     line-height: 1.6;
 }
 
-/* === Efeito de Brilho Sutil ao passar o mouse na caixa === */
-.caixa:hover {
-    /* Sombra de brilho suave e quente */
-    box-shadow: 0 15px 35px rgba(255, 150, 180, 0.4), 0 0 15px rgba(255, 255, 255, 0.5) inset;
-    transform: scale(1.02); /* Escala sutil */
-    transition: all 0.5s ease-in-out;
+/* Elementos de Formulário - Interface de Entrada */
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #ff00ff; /* Magenta para labels */
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #0d1117; /* Fundo do input bem escuro */
+    color: #00ffff; /* Texto do input Ciano Neon */
+    /* Borda afiada e colorida */
+    border: 2px solid #38bdf8;
+    border-radius: 3px; 
+    width: 85%;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    /* Brilho neon intenso ao focar */
+    border-color: #ff00ff; /* Magenta Neon */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6); 
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #38bdf8; /* Azul Neon para o botão */
+    color: #0d1117; /* Texto escuro */
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    /* Sombra de brilho */
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5); 
+    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+button:hover {
+    background-color: #00ffff; /* Ciano Neon ao passar o mouse */
+    transform: translateY(-2px) scale(1.05);
+    /* Sombra de elevação e brilho mais intenso */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); 
+    color: #0d1117;
+}
+
+#resultado {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00; /* Verde Neon para resultado positivo */
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.8);
+    transition: color 0.5s ease;
+}
+
+/* Estilo para resultados negativos */
+.resultado-erro {
+    color: #ff00ff !important; /* Magenta Neon para erro */
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.8) !important;
 }
