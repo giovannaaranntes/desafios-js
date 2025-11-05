@@ -1,1 +1,177 @@
+/* ===== Estilo Base - Versão Industrial Chic & Material Design ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* Fontes formais e limpas */
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+/* Fundo geral neutro e claro */
+body {
+    /* Fundo cinza suave, quase branco */
+    background-color: #f5f7fa; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Cor de texto primária (azul marinho/cinza escuro) */
+    color: #333d4e; 
+}
+
+/* ===== Header com seta de voltar - Fixo e Profissional ===== */
+header {
+    display: flex;
+    align-items: center;
+    /* Fundo branco limpo */
+    background-color: #ffffff; 
+    /* Sombra de profundidade (Material Design) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 15px 25px; 
+    /* Borda sutil na cor primária */
+    border-bottom: 3px solid #007bff; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    /* Cor primária: Azul Clássico */
+    color: #007bff; 
+    font-size: 1.7rem; 
+    letter-spacing: normal; 
+    font-weight: 500;
+}
+
+/* Seta de voltar - Sóbria e Funcional */
+.voltar {
+    font-size: 1.8rem; 
+    /* Cor Secundária: Cinza Escuro */
+    color: #5a6268; 
+    text-decoration: none;
+    transition: 0.3s ease-in-out; 
+}
+
+.voltar:hover {
+    /* Cor de foco: Laranja/Cobre Industrial */
+    color: #e67e22; 
+    /* Movimento funcional */
+    transform: translateX(-4px); 
+}
+
+/* ===== Conteúdo principal - Centralizado e Estruturado ===== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; 
+}
+
+.conteudo {
+    /* Fundo de container limpo */
+    background-color: #ffffff; 
+    /* Bordas sutilmente arredondadas */
+    border-radius: 10px; 
+    padding: 40px;
+    /* Sombra de Material Design com elevação */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+    max-width: 600px; 
+    width: 100%;
+    text-align: center;
+    /* Borda sutil para dar acabamento */
+    border: 1px solid #e0e0e0;
+}
+
+.conteudo h2 {
+    /* Cor primária */
+    color: #007bff; 
+    margin-bottom: 20px; 
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.conteudo p {
+    /* Cinza escuro para melhor legibilidade */
+    color: #555; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+}
+
+/* Elementos de Formulário - Input Field */
+label {
+    display: block;
+    font-weight: 500; 
+    margin-top: 20px;
+    /* Cor secundária */
+    color: #5a6268; 
+    font-size: 0.9rem;
+    text-align: left; /* Alinhamento à esquerda para campos de formulário */
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    padding: 10px; 
+    /* Borda sutil */
+    border: 1px solid #ced4da; 
+    border-radius: 6px; 
+    width: 85%; 
+    text-align: left; /* Texto alinhado à esquerda dentro do campo */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    color: #333d4e;
+}
+
+input:focus {
+    /* Borda de foco na cor primária */
+    border-color: #007bff; 
+    /* Sombra de foco limpa e fina */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); 
+    outline: none;
+}
+
+button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    /* Cor primária: Azul forte */
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 8px; /* Arredondamento clássico */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    /* Sombra de botão limpa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s ease-in-out; 
+}
+
+button:hover {
+    /* Cor mais escura ao passar o mouse */
+    background-color: #0056b3; 
+    /* Elevação sutilmente reduzida */
+    transform: translateY(-1px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#resultado {
+    margin-top: 35px;
+    font-size: 1.4rem; 
+    font-weight: 700;
+    /* Verde de sucesso corporativo */
+    color: #28a745; 
+    letter-spacing: 0;
+    transition: color 0.5s ease; 
+}
+
+/* Estilo para resultados negativos */
+.resultado-erro {
+    /* Vermelho de alerta */
+    color: #dc3545 !important; 
+}
 
